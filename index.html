@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expanded Code Icon Library</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9fa;
+        }
+        .icon-container {
+            background-color: #ffffff;
+            padding: 2.5rem;
+            border-radius: 1.5rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            position: relative;
+        }
+        .icon-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        .copy-button {
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            background-color: #4b5563;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            font-size: 0.875rem;
+            font-weight: 600;
+            transition: background-color 0.2s, transform 0.1s;
+        }
+        .copy-button:hover {
+            background-color: #374151;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body class="p-8 md:p-12">
+    <div class="max-w-6xl mx-auto">
+        <header class="text-center mb-16">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Code Icon Library</h1>
+            <p class="text-lg text-gray-600">
+                An extensive collection of simple, modern icons and logos designed for use in code editors and applications.
+            </p>
+        </header>
+
+        <!-- The main container for all icons -->
+        <div class="space-y-16">
+
+            <!-- Logos Section -->
+            <section>
+                <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Logos</h2>
+                <div class="icon-grid">
+                    <!-- Microsoft Icon -->
+                    <div class="icon-container">
+                        <h3 class="text-2xl font-semibold mb-6 text-gray-800">Microsoft</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24 mb-6" viewBox="0 0 100 100">
+                            <rect x="0" y="0" width="48" height="48" fill="#F25022" />
+                            <rect x="52" y="0" width="48" height="48" fill="#7FBA00" />
+                            <rect x="0" y="52" width="48" height="48" fill="#00A4EF" />
+                            <rect x="52" y="52" width="48" height="48" fill="#FFB900" />
+                        </svg>
+                        <div class="bg-gray-100 p-6 rounded-xl text-left w-full overflow-x-auto text-sm leading-relaxed">
+                            <pre id="code-microsoft">&lt;svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24" viewBox="0 0 100 100"&gt;
+    &lt;rect x="0" y="0" width="48" height="48" fill="#F25022" /&gt;
+    &lt;rect x="52" y="0" width="48" height="48" fill="#7FBA00" /&gt;
+    &lt;rect x="0" y="52" width="48" height="48" fill="#00A4EF" /&gt;
+    &lt;rect x="52" y="52" width="48" height="48" fill="#FFB900" /&gt;
+&lt;/svg&gt;</pre>
+                        </div>
+                        <button class="copy-button" onclick="copyToClipboard('code-microsoft')">Copy SVG</button>
+                    </div>
+
+                    <!-- Google Icon -->
+                    <div class="icon-container">
+                        <h3 class="text-2xl font-semibold mb-6 text-gray-800">Google</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24 mb-6" viewBox="0 0 100 100">
+                            <path d="M 50,20 a 30,30 0 1,0 0,60 a 30,30 0 1,0 0,-60 z" fill="#EA4335" />
+                            <path d="M 50,20 a 30,30 0 0,1 30,30 l -30,0 z" fill="#34A853" />
+                            <path d="M 50,50 l 30,0 a 30,30 0 0,1 -15,25.98 l -15,-25.98 z" fill="#4285F4" />
+                            <path d="M 50,50 l 0,30 a 30,30 0 0,1 -25.98,-15 l 25.98,-15 z" fill="#FBBC05" />
+                            <path d="M 50,50 a 30,30 0 0,1 -30,-30 l 30,0 z" fill="none" stroke="white" stroke-width="20" />
+                        </svg>
+                        <div class="bg-gray-100 p-6 rounded-xl text-left w-full overflow-x-auto text-sm leading-relaxed">
+                            <pre id="code-google">&lt;svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24" viewBox="0 0 100 100"&gt;
+    &lt;path d="M 50,20 a 30,30 0 1,0 0,60 a 30,30 0 1,0 0,-60 z" fill="#EA4335" /&gt;
+    &lt;path d="M 50,20 a 30,30 0 0,1 30,30 l -30,0 z" fill="#34A853" /&gt;
+    &lt;path d="M 50,50 l 30,0 a 30,30 0 0,1 -15,25.98 l -15,-25.98 z" fill="#4285F4" /&gt;
+    &lt;path d="M 50,50 l 0,30 a 30,30 0 0,1 -25.98,-15 l 25.98,-15 z" fill="#FBBC05" /&gt;
+    &lt;path d="M 50,50 a 30,30 0 0,1 -30,-30 l 30,0 z" fill="none" stroke="white" stroke-width="20" /&gt;
+&lt;/svg&gt;</pre>
+                        </div>
+                        <button class="copy-button" onclick="copyToClipboard('code-google')">Copy SVG</button>
+                    </div>
+
+                    <!-- Vercel Icon -->
+                    <div class="icon-container">
+                        <h3 class="text-2xl font-semibold mb-6 text-gray-800">Vercel</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24 mb-6" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="12,3 2.5,19.5 21.5,19.5" fill="black" />
+                        </svg>
+                        <div class="bg-gray-100 p-6 rounded-xl text-left w-full overflow-x-auto text-sm leading-relaxed">
+                            <pre id="code-vercel">&lt;svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24" viewBox="0 0 24 24" fill="currentColor"&gt;
+    &lt;polygon points="12,3 2.5,19.5 21.5,19.5" fill="black" /&gt;
+&lt;/svg&gt;</pre>
+                        </div>
+                        <button class="copy-button" onclick="copyToClipboard('code-vercel')">Copy SVG</button>
+                    </div>
+
+                    <!-- GitHub Icon -->
+                    <div class="icon-container">
+                        <h3 class="text-2xl font-semibold mb-6 text-gray-800">GitHub</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24 mb-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.5a5.19 5.19 0 0 0-6 0C7.27.65 6.09 1 6.09 1A5.07 5.07 0 0 0 6 4.77a5.44 5.44 0 0 0-1.5 3.56c0 5.4 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                        </svg>
+                        <div class="bg-gray-100 p-6 rounded-xl text-left w-full overflow-x-auto text-sm leading-relaxed">
+                            <pre id="code-github">&lt;svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"&gt;
+    &lt;path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.5a5.19 5.19 0 0 0-6 0C7.27.65 6.09 1 6.09 1A5.07 5.07 0 0 0 6 4.77a5.44 5.44 0 0 0-1.5 3.56c0 5.4 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"&gt;&lt;/path&gt;
+&lt;/svg&gt;</pre>
+                        </div>
+                        <button class="copy-button" onclick="copyToClipboard('code-github')">Copy SVG</button>
+                    </div>
+
+                    <!-- Docker Icon -->
+                    <div class="icon-container">
+                        <h3 class="text-2xl font-semibold mb-6 text-gray-800">Docker</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24 mb-6" viewBox="0 0 24 24" fill="#1D63ED" stroke="none">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h2v-2h-2v2zm0-4h2v-2h-2v2zm0-4h2v-2h-2v2zm4 8h2v-2h-2v2zm0-4h2v-2h-2v2z" />
+                        </svg>
+                        <div class="bg-gray-100 p-6 rounded-xl text-left w-full overflow-x-auto text-sm leading-relaxed">
+                            <pre id="code-docker">&lt;svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24" viewBox="0 0 24 24" fill="#1D63ED" stroke="none"&gt;
+    &lt;path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h2v-2h-2v2zm0-4h2v-2h-2v2zm0-4h2v-2h-2v2zm4 8h2v-2h-2v2zm0-4h2v-2h-2v2z" /&gt;
+&lt;/svg&gt;</pre>
+                        </div>
+                        <button class="copy-button" onclick="copyToClipboard('code-docker')">Copy SVG</button>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Development Icons Section -->
+            <section>
+                <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Development Icons</h2>
+                <div class="icon-grid">
+                    <!-- HTML5 Icon -->
+                    <div class="icon-container">
+                        <h3 class="text-2xl font-semibold mb-6 text-gray-800">HTML5</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24 mb-6" viewBox="0 0 24 24">
+                            <path fill="#e34f26" d="M1.5 0l1.832 20.612L12 24l8.668-3.388L22.5 0H1.5z"></path>
+                            <path fill="#ef652a" d="M12 3.844l-.27.61L9.23 18.062 12 19.344l2.77-1.282L15.27 3.844H12z"></path>
+                            <path fill="#eee" d="M12 3.844L8.73 18.062l-.27 1.282V3.844h-2.5v15.228L12 20.842l6.27-1.772v-2.5h-2.5v-10.999L12 3.844z"></path>
+                            <path fill="#fff" d="M12.015 15.656l2.09-.59L15.345 9l-1.46-3.219-1.875.001L9.89 12.001L12.015 15.656zm0-10.999l-2.09.59L8.655 9l1.46 3.219L12.015 9l2.125.001L12.015 4.657z"></path>
+                        </svg>
+                        <div class="bg-gray-100 p-6 rounded-xl text-left w-full overflow-x-auto text-sm leading-relaxed">
+                            <pre id="code-html5">&lt;svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24" viewBox="0 0 24 24"&gt;
+    &lt;path fill="#e34f26" d="M1.5 0l1.832 20.612L12 24l8.668-3.388L22.5 0H1.5z"&gt;&lt;/path&gt;
+    &lt;path fill="#ef652a" d="M12 3.844l-.27.61L9.23 18.062 12 19.344l2.77-1.282L15.27 3.844H12z"&gt;&lt;/path&gt;
+    &lt;path fill="#eee" d="M12 3.844L8.73 18.062l-.27 1.282V3.844h-2.5v15.228L12 20.842l6.27-1.772v-2.5h-2.5v-10.999L12 3.844z"&gt;&lt;/path&gt;
+    &lt;path fill="#fff" d="M12.015 15.656l2.09-.59L15.345 9l-1.46-3.219-1.875.001L9.89 12.001L12.015 15.656zm0-10.999l-2.09.59L8.655 9l1.46 3.219L12.015 9l2.125.001L12.015 4.657z"&gt;&lt;/path&gt;
+&lt;/svg&gt;</pre>
+                        </div>
+                        <button class="copy-button" onclick="copyToClipboard('code-html5')">Copy SVG</button>
+                    </div>
+
+                    <!-- CSS3 Icon -->
+                    <div class="icon-container">
+                        <h3 class="text-2xl font-semibold mb-6 text-gray-800">CSS3</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24 mb-6" viewBox="0 0 24 24">
+                            <path fill="#1572b6" d="M2.5 0l-1.56 16.59L12 24l10.06-3.41L22.5 0H2.5z"></path>
+                            <path fill="#29a9df" d="M12 3.844l-5.698 12.187L12 19.344l5.698-3.313L17.77 3.844H12z"></path>
+                            <path fill="#eee" d="M12 3.844L8.73 18.062l-.27 1.282V3.844h-2.5v15.228L12 20.842l6.27-1.772v-2.5h-2.5v-10.999L12 3.844z"></path>
+                            <path fill="#fff" d="M12.015 15.656l2.09-.59L15.345 9l-1.46-3.219-1.875.001L9.89 12.001L12.015 15.656zm0-10.999l-2.09.59L8.655 9l1.46 3.219L12.015 9l2.125.001L12.015 4.657z"></path>
+                        </svg>
+                        <div class="bg-gray-100 p-6 rounded-xl text-left w-full overflow-x-auto text-sm leading-relaxed">
+                            <pre id="code-css3">&lt;svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24" viewBox="0 0 24 24"&gt;
+    &lt;path fill="#1572b6" d="M2.5 0l-1.56 16.59L12 24l10.06-3.41L22.5 0H2.5z"&gt;&lt;/path&gt;
+    &lt;path fill="#29a9df" d="M12 3.844l-5.698 12.187L12 19.344l5.698-3.313L17.77 3.844H12z"&gt;&lt;/path&gt;
+    &lt;path fill="#eee" d="M12 3.844L8.73 18.062l-.27 1.282V3.844h-2.5v15.228L12 20.842l6.27-1.772v-2.5h-2.5v-10.999L12 3.844z"&gt;&lt;/path&gt;
+    &lt;path fill="#fff" d="M12.015 15.656l2.09-.59L15.345 9l-1.46-3.219-1.875.001L9.89 12.001L12.015 15.656zm0-10.999l-2.09.59L8.655 9l1.46 3.219L12.015 9l2.125.001L12.015 4.657z"&gt;&lt;/path&gt;
+&lt;/svg&gt;</pre>
+                        </div>
+                        <button class="copy-button" onclick="copyToClipboard('code-css3')">Copy SVG</button>
+                    </div>
+
+                    <!-- JavaScript Icon -->
+                    <div class="icon-container">
+                        <h3 class="text-2xl font-semibold mb-6 text-gray-800">JavaScript</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24 mb-6" viewBox="0 0 24 24">
+                            <path fill="#f7df1e" d="M0 0h24v24H0z"></path>
+                            <path fill="#000" d="M12 15.26c-.85 0-1.54-.42-1.54-1.28v-1.92h1.54v1.28c0 .42.22.64.64.64s.64-.22.64-.64V9h-1.54V7.5h3.08v4.25c0 .86-.68 1.51-1.54 1.51z"></path>
+                            <path fill="#000" d="M16.54 15.26c-.73 0-1.24-.26-1.54-.78l-.3-1.01h1.53c0 .19.1.37.2.5.34.42.92.54 1.34.54.49 0 .86-.18 1.14-.54.28-.36.42-.77.42-1.29 0-.42-.14-.77-.42-1.04-.28-.31-.69-.47-1.23-.47h-1.24c-.11 0-.17-.06-.17-.18v-.26c0-.13.06-.19.17-.19h1.24c.42 0 .8.14 1.15.42.3.26.45.62.45 1.09 0 .2-.05.37-.16.5H18.7c-.1-.13-.25-.33-.42-.5-.42-.42-1.01-.58-1.54-.58-1.04 0-1.8.63-1.8 1.83 0 .74.45 1.25 1.23 1.51.53.18 1.24.28 1.8.28.6 0 1.08-.12 1.44-.36.36-.24.54-.6.54-1.08 0-.49-.24-.9-.73-1.23-.49-.33-1.18-.5-2.09-.5h-.98c-.42 0-.64-.2-.64-.6v-.1c0-.42.22-.64.64-.64h.98c.42 0 .8.14 1.15.42.3.26.45.62.45 1.09 0 .2-.05.37-.16.5z"></path>
+                        </svg>
+                        <div class="bg-gray-100 p-6 rounded-xl text-left w-full overflow-x-auto text-sm leading-relaxed">
+                            <pre id="code-javascript">&lt;svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24" viewBox="0 0 24 24"&gt;
+    &lt;path fill="#f7df1e" d="M0 0h24v24H0z"&gt;&lt;/path&gt;
+    &lt;path fill="#000" d="M12 15.26c-.85 0-1.54-.42-1.54-1.28v-1.92h1.54v1.28c0 .42.22.64.64.64s.64-.22.64-.64V9h-1.54V7.5h3.08v4.25c0 .86-.68 1.51-1.54 1.51z"&gt;&lt;/path&gt;
+    &lt;path fill="#000" d="M16.54 15.26c-.73 0-1.24-.26-1.54-.78l-.3-1.01h1.53c0 .19.1.37.2.5.34.42.92.54 1.34.54.49 0 .86-.18 1.14-.54.28-.36.42-.77.42-1.29 0-.42-.14-.77-.42-1.04-.28-.31-.69-.47-1.23-.47h-1.24c-.11 0-.17-.06-.17-.18v-.26c0-.13.06-.19.17-.19h1.24c.42 0 .8.14 1.15.42.3.26.45.62.45 1.09 0 .2-.05.37-.16.5H18.7c-.1-.13-.25-.33-.42-.5-.42-.42-1.01-.58-1.54-.58-1.04 0-1.8.63-1.8 1.83 0 .74.45 1.25 1.23 1.51.53.18 1.24.28 1.8.28.6 0 1.08-.12 1.44-.36.36-.24.54-.6.54-1.08 0-.49-.24-.9-.73-1.23-.49-.33-1.18-.5-2.09-.5h-.98c-.42 0-.64-.2-.64-.6v-.1c0-.42.22-.64.64-.64h.98c.42 0 .8.14 1.15.42.3.26.45.62.45 1.09 0 .2-.05.37-.16.5z"&gt;&lt;/path&gt;
+&lt;/svg&gt;</pre>
+                        </div>
+                        <button class="copy-button" onclick="copyToClipboard('code-javascript')">Copy SVG</button>
+                    </div>
+                
+                    <!-- Python Icon -->
+                    <div class="icon-container">
+                        <h3 class="text-2xl font-semibold mb-6 text-gray-800">Python</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24 mb-6" viewBox="0 0 24 24">
+                            <path d="M18.89 9.89a.95.95 0 01-1.04.53 1.95 1.95 0 00-1.78.25c-.24.16-.48.34-.73.53a3.5 3.5 0 01-1.57.54 3.2 3.2 0 01-2.14-.62c-.75-.54-1.1-1.29-1.1-2.22a3.24 3.24 0 011-2.29 2.92 2.92 0 012-.66c.26-.06.51.1.59.39l.1.33a.62.62 0 00.32.32l.33.1a.63.63 0 00.39.09.83.83 0 01.3-.06c.38-.1 1.23-.19 2.15-.3l.7-.09a.74.74 0 00.41-.65v-.01a.63.63 0 00-.32-.5c-.32-.23-.65-.45-1-.66a3.2 3.2 0 00-2.08-.53 3.44 3.44 0 00-3.08 1.45c-.2.27-.37.55-.5.85a.9.9 0 01-.84.44l-.2.01a.75.75 0 00-.63.53c-.3.84-.52 1.69-.64 2.58a3.3 3.3 0 00-.09 1.15 3.25 3.25 0 00.9 2.51c.42.5.95.91 1.62 1.25a3.36 3.36 0 002.39.69c.81 0 1.58-.23 2.34-.65a6.45 6.45 0 001.62-1.25 1.55 1.55 0 01.12-1.46c.16-.16.27-.27.4-.36l.2-.14c.14-.1.3-.17.47-.2v-.02l.14-.06a.71.71 0 01.4-.04c.14 0 .28.02.4.07.13.06.26.11.37.18.23.1.5.21.75.3a2.57 2.57 0 011.64 2.2c0 .92-.3 1.62-1 2.05a3.42 3.42 0 01-2.31.54 3.2 3.2 0 01-2.52-1.07c-.1-.13-.2-.26-.29-.4a.97.97 0 01-.2-.55v-.31a.88.88 0 00-.28-.53c-.15-.1-.3-.15-.46-.17-.18-.02-.35.03-.5.12z" fill="#3776ab"></path>
+                            <circle cx="15.82" cy="7.7" r="1.3" fill="#fff"></circle>
+                            <circle cx="7.24" cy="16.3" r="1.3" fill="#fff"></circle>
+                        </svg>
+                        <div class="bg-gray-100 p-6 rounded-xl text-left w-full overflow-x-auto text-sm leading-relaxed">
+                            <pre id="code-python">&lt;svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24" viewBox="0 0 24 24"&gt;
+    &lt;path d="M18.89 9.89a.95.95 0 01-1.04.53 1.95 1.95 0 00-1.78.25c-.24.16-.48.34-.73.53a3.5 3.5 0 01-1.57.54 3.2 3.2 0 01-2.14-.62c-.75-.54-1.1-1.29-1.1-2.22a3.24 3.24 0 011-2.29 2.92 2.92 0 012-.66c.26-.06.51.1.59.39l.1.33a.62.62 0 00.32.32l.33.1a.63.63 0 00.39.09.83.83 0 01.3-.06c.38-.1 1.23-.19 2.15-.3l.7-.09a.74.74 0 00.41-.65v-.01a.63.63 0 00-.32-.5c-.32-.23-.65-.45-1-.66a3.2 3.2 0 00-2.08-.53 3.44 3.44 0 00-3.08 1.45c-.2.27-.37.55-.5.85a.9.9 0 01-.84.44l-.2.01a.75.75 0 00-.63.53c-.3.84-.52 1.69-.64 2.58a3.3 3.3 0 00-.09 1.15 3.25 3.25 0 00.9 2.51c.42.5.95.91 1.62 1.25a3.36 3.36 0 002.39.69c.81 0 1.58-.23 2.34-.65a6.45 6.45 0 001.62-1.25 1.55 1.55 0 01.12-1.46c.16-.16.27-.27.4-.36l.2-.14c.14-.1.3-.17.47-.2v-.02l.14-.06a.71.71 0 01.4-.04c.14 0 .28.02.4.07.13.06.26.11.37.18.23.1.5.21.75.3a2.57 2.57 0 011.64 2.2c0 .92-.3 1.62-1 2.05a3.42 3.42 0 01-2.31.54 3.2 3.2 0 01-2.52-1.07c-.1-.13-.2-.26-.29-.4a.97.97 0 01-.2-.55v-.31a.88.88 0 00-.28-.53c-.15-.1-.3-.15-.46-.17-.18-.02-.35.03-.5.12z" fill="#3776ab"&gt;&lt;/path&gt;
+    &lt;circle cx="15.82" cy="7.7" r="1.3" fill="#fff"&gt;&lt;/circle&gt;
+    &lt;circle cx="7.24" cy="16.3" r="1.3" fill="#fff"&gt;&lt;/circle&gt;
+&lt;/svg&gt;</pre>
+                        </div>
+                        <button class="copy-button" onclick="copyToClipboard('code-python')">Copy SVG</button>
+                    </div>
+
+                    <!-- React Icon -->
+                    <div class="icon-container">
+                        <h3 class="text-2xl font-semibold mb-6 text-gray-800">React</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24 mb-6" viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="3" fill="#61DAFB"></circle>
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1.5 13.91a2.01 2.01 0 01-1.46-.59L5.3 11.2a2 2 0 01-.5-2.82 2 2 0 012.82-.5L11 11.08l1.7-1.7c.39-.39 1.02-.39 1.41 0a1 1 0 010 1.41L12.41 12l2.64 2.64a1 1 0 010 1.41 1 1 0 01-1.41 0L12 13.41l-1.46 1.46zm1.5-6.83l-2.64-2.64a1 1 0 010-1.41 1 1 0 011.41 0L12 8.59l2.64-2.64a1 1 0 011.41 0 1 1 0 010 1.41L13.41 12l2.64 2.64a1 1 0 010 1.41 1 1 0 01-1.41 0L12 13.41l-2.64-2.64a1 1 0 010-1.41z" fill="#61DAFB"></path>
+                        </svg>
+                        <div class="bg-gray-100 p-6 rounded-xl text-left w-full overflow-x-auto text-sm leading-relaxed">
+                            <pre id="code-react">&lt;svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24" viewBox="0 0 24 24"&gt;
+    &lt;circle cx="12" cy="12" r="3" fill="#61DAFB"&gt;&lt;/circle&gt;
+    &lt;path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1.5 13.91a2.01 2.01 0 01-1.46-.59L5.3 11.2a2 2 0 01-.5-2.82 2 2 0 012.82-.5L11 11.08l1.7-1.7c.39-.39 1.02-.39 1.41 0a1 1 0 010 1.41L12.41 12l2.64 2.64a1 1 0 010 1.41 1 1 0 01-1.41 0L12 13.41l-1.46 1.46zm1.5-6.83l-2.64-2.64a1 1 0 010-1.41 1 1 0 011.41 0L12 8.59l2.64-2.64a1 1 0 011.41 0 1 1 0 010 1.41L13.41 12l2.64 2.64a1 1 0 010 1.41 1 1 0 01-1.41 0L12 13.41l-2.64-2.64a1 1 0 010-1.41z" fill="#61DAFB"&gt;&lt;/path&gt;
+&lt;/svg&gt;</pre>
+                        </div>
+                        <button class="copy-button" onclick="copyToClipboard('code-react')">Copy SVG</button>
+                    </div>
+
+                    <!-- Node.js Icon -->
+                    <div class="icon-container">
+                        <h3 class="text-2xl font-semibold mb-6 text-gray-800">Node.js</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24 mb-6" viewBox="0 0 24 24">
+                            <path fill="#8CC84B" d="M11.594 1.25L1.5 5.562V18.438L11.594 22.75L21.688 18.438V5.562L11.594 1.25z"></path>
+                            <path fill="#3F863D" d="M12.001 2.029V2.03L12 19.971L1.938 18.438V5.562L12 2.029z"></path>
+                            <path fill="#E6EEF4" d="M12.001 2.03L12 19.971L22.062 18.438V5.562L12.001 2.03z"></path>
+                            <path fill="#5EA44E" d="M12 2.029L1.938 5.562V18.438L12 19.971z"></path>
+                            <path fill="#3F863D" d="M12 19.971V2.029L22.062 5.562V18.438z"></path>
+                            <path fill="#5EA44E" d="M11.594 1.25L1.5 5.562V18.438L11.594 22.75L21.688 18.438V5.562L11.594 1.25z"></path>
+                        </svg>
+                        <div class="bg-gray-100 p-6 rounded-xl text-left w-full overflow-x-auto text-sm leading-relaxed">
+                            <pre id="code-node">&lt;svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24" viewBox="0 0 24 24"&gt;
+    &lt;path fill="#8CC84B" d="M11.594 1.25L1.5 5.562V18.438L11.594 22.75L21.688 18.438V5.562L11.594 1.25z"&gt;&lt;/path&gt;
+    &lt;path fill="#3F863D" d="M12.001 2.029V2.03L12 19.971L1.938 18.438V5.562L12 2.029z"&gt;&lt;/path&gt;
+    &lt;path fill="#E6EEF4" d="M12.001 2.03L12 19.971L22.062 18.438V5.562L12.001 2.03z"&gt;&lt;/path&gt;
+    &lt;path fill="#5EA44E" d="M12 2.029L1.938 5.562V18.438L12 19.971z"&gt;&lt;/path&gt;
+    &lt;path fill="#3F863D" d="M12 19.971V2.029L22.062 5.562V18.438z"&gt;&lt;/path&gt;
+    &lt;path fill="#5EA44E" d="M11.594 1.25L1.5 5.562V18.438L11.594 22.75L21.688 18.438V5.562L11.594 1.25z"&gt;&lt;/path&gt;
+&lt;/svg&gt;</pre>
+                        </div>
+                        <button class="copy-button" onclick="copyToClipboard('code-node')">Copy SVG</button>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- General UI Icons Section -->
+            <section>
+                <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">General UI Icons</h2>
+                <div class="icon-grid">
+                    <!-- Prohibited Icon -->
+                    <div class="icon-container">
+                        <h3 class="text-2xl font-semibold mb-6 text-gray-800">Prohibited</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24 mb-6" viewBox="0 0 24 24" fill="none" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="m4.22 4.22 15.56 15.56" />
+                        </svg>
+                        <div class="bg-gray-100 p-6 rounded-xl text-left w-full overflow-x-auto text-sm leading-relaxed">
+                            <pre id="code-prohibited">&lt;svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24" viewBox="0 0 24 24" fill="none" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;
+    &lt;circle cx="12" cy="12" r="10" /&gt;
+    &lt;path d="m4.22 4.22 15.56 15.56" /&gt;
+&lt;/svg&gt;</pre>
+                        </div>
+                        <button class="copy-button" onclick="copyToClipboard('code-prohibited')">Copy SVG</button>
+                    </div>
+
+                    <!-- Handcuffs Icon -->
+                    <div class="icon-container">
+                        <h3 class="text-2xl font-semibold mb-6 text-gray-800">Handcuffs</h3>
+                        <svg class="w-24 h-24 text-gray-800" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M25 50 C25 35 40 25 50 25 C60 25 75 35 75 50" stroke="currentColor" stroke-width="8" stroke-linecap="round"/>
+                            <path d="M25 50 C25 65 40 75 50 75 C60 75 75 65 75 50" stroke="currentColor" stroke-width="8" stroke-linecap="round"/>
+                            <path d="M40 50 C40 35 55 25 65 25 C75 25 90 35 90 50" stroke="currentColor" stroke-width="8" stroke-linecap="round"/>
+                            <path d="M40 50 C40 65 55 75 65 75 C75 75 90 65 90 50" stroke="currentColor" stroke-width="8" stroke-linecap="round"/>
+                            <line x1="50" y1="50" x2="65" y2="50" stroke="currentColor" stroke-width="6" stroke-linecap="round"/>
+                        </svg>
+                        <div class="bg-gray-100 p-6 rounded-xl text-left w-full overflow-x-auto text-sm leading-relaxed">
+                            <pre id="code-handcuffs">&lt;svg class="w-24 h-24 text-gray-800" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"&gt;
+    &lt;path d="M25 50 C25 35 40 25 50 25 C60 25 75 35 75 50" stroke="currentColor" stroke-width="8" stroke-linecap="round"/&gt;
+    &lt;path d="M25 50 C25 65 40 75 50 75 C60 75 75 65 75 50" stroke="currentColor" stroke-width="8" stroke-linecap="round"/&gt;
+    &lt;path d="M40 50 C40 35 55 25 65 25 C75 25 90 35 90 50" stroke="currentColor" stroke-width="8" stroke-linecap="round"/&gt;
+    &lt;path d="M40 50 C40 65 55 75 65 75 C75 75 90 65 90 50" stroke="currentColor" stroke-width="8" stroke-linecap="round"/&gt;
+    &lt;line x1="50" y1="50" x2="65" y2="50" stroke="currentColor" stroke-width="6" stroke-linecap="round"/&gt;
+&lt;/svg&gt;</pre>
+                        </div>
+                        <button class="copy-button" onclick="copyToClipboard('code-handcuffs')">Copy SVG</button>
+                    </div>
+
+                    <!-- Chat Icon -->
+                    <div class="icon-container">
+                        <h3 class="text-2xl font-semibold mb-6 text-gray-800">Chat</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24 mb-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                        <div class="bg-gray-100 p-6 rounded-xl text-left w-full overflow-x-auto text-sm leading-relaxed">
+                            <pre id="code-chat">&lt;svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;
+    &lt;path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"&gt;&lt;/path&gt;
+&lt;/svg&gt;</pre>
+                        </div>
+                        <button class="copy-button" onclick="copyToClipboard('code-chat')">Copy SVG</button>
+                    </div>
+
+                    <!-- Docs Icon -->
+                    <div class="icon-container">
+                        <h3 class="text-2xl font-semibold mb-6 text-gray-800">Docs</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24 mb-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <line x1="10" y1="9" x2="10" y2="9"></line>
+                        </svg>
+                        <div class="bg-gray-100 p-6 rounded-xl text-left w-full overflow-x-auto text-sm leading-relaxed">
+                            <pre id="code-docs">&lt;svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;
+    &lt;path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"&gt;&lt;/path&gt;
+    &lt;polyline points="14 2 14 8 20 8"&gt;&lt;/polyline&gt;
+    &lt;line x1="16" y1="13" x2="8" y2="13"&gt;&lt;/line&gt;
+    &lt;line x1="16" y1="17" x2="8" y2="17"&gt;&lt;/line&gt;
+    &lt;line x1="10" y1="9" x2="10" y2="9"&gt;&lt;/line&gt;
+&lt;/svg&gt;</pre>
+                        </div>
+                        <button class="copy-button" onclick="copyToClipboard('code-docs')">Copy SVG</button>
+                    </div>
+
+                    <!-- Email Icon -->
+                    <div class="icon-container">
+                        <h3 class="text-2xl font-semibold mb-6 text-gray-800">Email</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24 mb-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        <div class="bg-gray-100 p-6 rounded-xl text-left w-full overflow-x-auto text-sm leading-relaxed">
+                            <pre id="code-email">&lt;svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;
+    &lt;path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"&gt;&lt;/path&gt;
+    &lt;polyline points="22,6 12,13 2,6"&gt;&lt;/polyline&gt;
+&lt;/svg&gt;</pre>
+                        </div>
+                        <button class="copy-button" onclick="copyToClipboard('code-email')">Copy SVG</button>
+                    </div>
+                
+                    <!-- More General UI Icons -->
+                    <div class="icon-container">
+                        <h3 class="text-2xl font-semibold mb-6 text-gray-800">Search</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24 mb-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                        <div class="bg-gray-100 p-6 rounded-xl text-left w-full overflow-x-auto text-sm leading-relaxed">
+                            <pre id="code-search">&lt;svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;
+    &lt;circle cx="11" cy="11" r="8"&gt;&lt;/circle&gt;
+    &lt;line x1="21" y1="21" x2="16.65" y2="16.65"&gt;&lt;/line&gt;
+&lt;/svg&gt;</pre>
+                        </div>
+                        <button class="copy-button" onclick="copyToClipboard('code-search')">Copy SVG</button>
+                    </div>
+
+                    <div class="icon-container">
+                        <h3 class="text-2xl font-semibold mb-6 text-gray-800">Home</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24 mb-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                        </svg>
+                        <div class="bg-gray-100 p-6 rounded-xl text-left w-full overflow-x-auto text-sm leading-relaxed">
+                            <pre id="code-home">&lt;svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;
+    &lt;path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"&gt;&lt;/path&gt;
+    &lt;polyline points="9 22 9 12 15 12 15 22"&gt;&lt;/polyline&gt;
+&lt;/svg&gt;</pre>
+                        </div>
+                        <button class="copy-button" onclick="copyToClipboard('code-home')">Copy SVG</button>
+                    </div>
+
+                    <div class="icon-container">
+                        <h3 class="text-2xl font-semibold mb-6 text-gray-800">User</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24 mb-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                        <div class="bg-gray-100 p-6 rounded-xl text-left w-full overflow-x-auto text-sm leading-relaxed">
+                            <pre id="code-user">&lt;svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;
+    &lt;path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"&gt;&lt;/path&gt;
+    &lt;circle cx="12" cy="7" r="4"&gt;&lt;/circle&gt;
+&lt;/svg&gt;</pre>
+                        </div>
+                        <button class="copy-button" onclick="copyToClipboard('code-user')">Copy SVG</button>
+                    </div>
+
+                    <div class="icon-container">
+                        <h3 class="text-2xl font-semibold mb-6 text-gray-800">Settings</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24 mb-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 20a8 8 0 1 0 0-16 8 8 0 0 0 0 16z"></path>
+                            <path d="M12 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"></path>
+                            <path d="M18.8 11.2a8 8 0 0 0-13.6 0"></path>
+                            <path d="M5.2 12.8a8 8 0 0 0 13.6 0"></path>
+                        </svg>
+                        <div class="bg-gray-100 p-6 rounded-xl text-left w-full overflow-x-auto text-sm leading-relaxed">
+                            <pre id="code-settings">&lt;svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;
+    &lt;path d="M12 20a8 8 0 1 0 0-16 8 8 0 0 0 0 16z"&gt;&lt;/path&gt;
+    &lt;path d="M12 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"&gt;&lt;/path&gt;
+    &lt;path d="M18.8 11.2a8 8 0 0 0-13.6 0"&gt;&lt;/path&gt;
+    &lt;path d="M5.2 12.8a8 8 0 0 0 13.6 0"&gt;&lt;/path&gt;
+&lt;/svg&gt;</pre>
+                        </div>
+                        <button class="copy-button" onclick="copyToClipboard('code-settings')">Copy SVG</button>
+                    </div>
+
+                    <div class="icon-container">
+                        <h3 class="text-2xl font-semibold mb-6 text-gray-800">Phone</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24 mb-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2h-11.64a2 2 0 0 1-2.18-2v-3a2 2 0 0 1 2-2h3.41l1.63 1.63a1 1 0 0 0 1.41 0l1.63-1.63h3.41a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                        <div class="bg-gray-100 p-6 rounded-xl text-left w-full overflow-x-auto text-sm leading-relaxed">
+                            <pre id="code-phone">&lt;svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;
+    &lt;path d="M22 16.92v3a2 2 0 0 1-2.18 2h-11.64a2 2 0 0 1-2.18-2v-3a2 2 0 0 1 2-2h3.41l1.63 1.63a1 1 0 0 0 1.41 0l1.63-1.63h3.41a2 2 0 0 1 2 2z"&gt;&lt;/path&gt;
+&lt;/svg&gt;</pre>
+                        </div>
+                        <button class="copy-button" onclick="copyToClipboard('code-phone')">Copy SVG</button>
+                    </div>
+
+                    <div class="icon-container">
+                        <h3 class="text-2xl font-semibold mb-6 text-gray-800">Sensitive Info</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24 mb-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2" fill="#e5e7eb"></rect>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4" stroke="#4b5563" fill="none"></path>
+                            <text x="12" y="17" text-anchor="middle" font-family="monospace" font-size="2" fill="#4b5563">XXXX_XXXX</text>
+                        </svg>
+                        <div class="bg-gray-100 p-6 rounded-xl text-left w-full overflow-x-auto text-sm leading-relaxed">
+                            <pre id="code-sensitive">&lt;svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"&gt;
+    &lt;rect x="3" y="11" width="18" height="11" rx="2" ry="2" fill="#e5e7eb"&gt;&lt;/rect&gt;
+    &lt;path d="M7 11V7a5 5 0 0 1 10 0v4" stroke="#4b5563" fill="none"&gt;&lt;/path&gt;
+    &lt;text x="12" y="17" text-anchor="middle" font-family="monospace" font-size="2" fill="#4b5563"&gt;XXXX_XXXX&lt;/text&gt;
+&lt;/svg&gt;</pre>
+                        </div>
+                        <button class="copy-button" onclick="copyToClipboard('code-sensitive')">Copy SVG</button>
+                    </div>
+                    
+                    <div class="icon-container">
+                        <h3 class="text-2xl font-semibold mb-6 text-gray-800">Bell</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24 mb-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                            <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                        </svg>
+                        <div class="bg-gray-100 p-6 rounded-xl text-left w-full overflow-x-auto text-sm leading-relaxed">
+                            <pre id="code-bell">&lt;svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;
+    &lt;path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"&gt;&lt;/path&gt;
+    &lt;path d="M13.73 21a2 2 0 0 1-3.46 0"&gt;&lt;/path&gt;
+&lt;/svg&gt;</pre>
+                        </div>
+                        <button class="copy-button" onclick="copyToClipboard('code-bell')">Copy SVG</button>
+                    </div>
+                    
+                    <div class="icon-container">
+                        <h3 class="text-2xl font-semibold mb-6 text-gray-800">Menu</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24 mb-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="3" y1="12" x2="21" y2="12"></line>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <line x1="3" y1="18" x2="21" y2="18"></line>
+                        </svg>
+                        <div class="bg-gray-100 p-6 rounded-xl text-left w-full overflow-x-auto text-sm leading-relaxed">
+                            <pre id="code-menu">&lt;svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;
+    &lt;line x1="3" y1="12" x2="21" y2="12"&gt;&lt;/line&gt;
+    &lt;line x1="3" y1="6" x2="21" y2="6"&gt;&lt;/line&gt;
+    &lt;line x1="3" y1="18" x2="21" y2="18"&gt;&lt;/line&gt;
+&lt;/svg&gt;</pre>
+                        </div>
+                        <button class="copy-button" onclick="copyToClipboard('code-menu')">Copy SVG</button>
+                    </div>
+
+                    <div class="icon-container">
+                        <h3 class="text-2xl font-semibold mb-6 text-gray-800">Plus</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24 mb-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="12" y1="5" x2="12" y2="19"></line>
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                        </svg>
+                        <div class="bg-gray-100 p-6 rounded-xl text-left w-full overflow-x-auto text-sm leading-relaxed">
+                            <pre id="code-plus">&lt;svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;
+    &lt;line x1="12" y1="5" x2="12" y2="19"&gt;&lt;/line&gt;
+    &lt;line x1="5" y1="12" x2="19" y2="12"&gt;&lt;/line&gt;
+&lt;/svg&gt;</pre>
+                        </div>
+                        <button class="copy-button" onclick="copyToClipboard('code-plus')">Copy SVG</button>
+                    </div>
+
+                    <div class="icon-container">
+                        <h3 class="text-2xl font-semibold mb-6 text-gray-800">Minus</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24 mb-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                        </svg>
+                        <div class="bg-gray-100 p-6 rounded-xl text-left w-full overflow-x-auto text-sm leading-relaxed">
+                            <pre id="code-minus">&lt;svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;
+    &lt;line x1="5" y1="12" x2="19" y2="12"&gt;&lt;/line&gt;
+&lt;/svg&gt;</pre>
+                        </div>
+                        <button class="copy-button" onclick="copyToClipboard('code-minus')">Copy SVG</button>
+                    </div>
+
+                    <div class="icon-container">
+                        <h3 class="text-2xl font-semibold mb-6 text-gray-800">Check</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24 mb-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        <div class="bg-gray-100 p-6 rounded-xl text-left w-full overflow-x-auto text-sm leading-relaxed">
+                            <pre id="code-check">&lt;svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;
+    &lt;polyline points="20 6 9 17 4 12"&gt;&lt;/polyline&gt;
+&lt;/svg&gt;</pre>
+                        </div>
+                        <button class="copy-button" onclick="copyToClipboard('code-check')">Copy SVG</button>
+                    </div>
+
+                    <div class="icon-container">
+                        <h3 class="text-2xl font-semibold mb-6 text-gray-800">X (Close)</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24 mb-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                        <div class="bg-gray-100 p-6 rounded-xl text-left w-full overflow-x-auto text-sm leading-relaxed">
+                            <pre id="code-close">&lt;svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;
+    &lt;line x1="18" y1="6" x2="6" y2="18"&gt;&lt;/line&gt;
+    &lt;line x1="6" y1="6" x2="18" y2="18"&gt;&lt;/line&gt;
+&lt;/svg&gt;</pre>
+                        </div>
+                        <button class="copy-button" onclick="copyToClipboard('code-close')">Copy SVG</button>
+                    </div>
+
+                    <div class="icon-container">
+                        <h3 class="text-2xl font-semibold mb-6 text-gray-800">Trash</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24 mb-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="3 6 5 6 21 6"></polyline>
+                            <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                            <line x1="10" y1="11" x2="10" y2="17"></line>
+                            <line x1="14" y1="11" x2="14" y2="17"></line>
+                        </svg>
+                        <div class="bg-gray-100 p-6 rounded-xl text-left w-full overflow-x-auto text-sm leading-relaxed">
+                            <pre id="code-trash">&lt;svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;
+    &lt;polyline points="3 6 5 6 21 6"&gt;&lt;/polyline&gt;
+    &lt;path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"&gt;&lt;/path&gt;
+    &lt;line x1="10" y1="11" x2="10" y2="17"&gt;&lt;/line&gt;
+    &lt;line x1="14" y1="11" x2="14" y2="17"&gt;&lt;/line&gt;
+&lt;/svg&gt;</pre>
+                        </div>
+                        <button class="copy-button" onclick="copyToClipboard('code-trash')">Copy SVG</button>
+                    </div>
+
+                    <div class="icon-container">
+                        <h3 class="text-2xl font-semibold mb-6 text-gray-800">Edit</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24 mb-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                            <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+                        </svg>
+                        <div class="bg-gray-100 p-6 rounded-xl text-left w-full overflow-x-auto text-sm leading-relaxed">
+                            <pre id="code-edit">&lt;svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;
+    &lt;path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"&gt;&lt;/path&gt;
+    &lt;path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"&gt;&lt;/path&gt;
+&lt;/svg&gt;</pre>
+                        </div>
+                        <button class="copy-button" onclick="copyToClipboard('code-edit')">Copy SVG</button>
+                    </div>
+
+                    <div class="icon-container">
+                        <h3 class="text-2xl font-semibold mb-6 text-gray-800">Star</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24 mb-6" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                        </svg>
+                        <div class="bg-gray-100 p-6 rounded-xl text-left w-full overflow-x-auto text-sm leading-relaxed">
+                            <pre id="code-star">&lt;svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24" viewBox="0 0 24 24" fill="currentColor" stroke="none"&gt;
+    &lt;polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"&gt;&lt;/polygon&gt;
+&lt;/svg&gt;</pre>
+                        </div>
+                        <button class="copy-button" onclick="copyToClipboard('code-star')">Copy SVG</button>
+                    </div>
+
+                    <div class="icon-container">
+                        <h3 class="text-2xl font-semibold mb-6 text-gray-800">Heart</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24 mb-6" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                        <div class="bg-gray-100 p-6 rounded-xl text-left w-full overflow-x-auto text-sm leading-relaxed">
+                            <pre id="code-heart">&lt;svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24" viewBox="0 0 24 24" fill="currentColor" stroke="none"&gt;
+    &lt;path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"&gt;&lt;/path&gt;
+&lt;/svg&gt;</pre>
+                        </div>
+                        <button class="copy-button" onclick="copyToClipboard('code-heart')">Copy SVG</button>
+                    </div>
+
+                    <div class="icon-container">
+                        <h3 class="text-2xl font-semibold mb-6 text-gray-800">Info</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24 mb-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="12" y1="16" x2="12" y2="12"></line>
+                            <line x1="12" y1="8" x2="12" y2="8"></line>
+                        </svg>
+                        <div class="bg-gray-100 p-6 rounded-xl text-left w-full overflow-x-auto text-sm leading-relaxed">
+                            <pre id="code-info">&lt;svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;
+    &lt;circle cx="12" cy="12" r="10"&gt;&lt;/circle&gt;
+    &lt;line x1="12" y1="16" x2="12" y2="12"&gt;&lt;/line&gt;
+    &lt;line x1="12" y1="8" x2="12" y2="8"&gt;&lt;/line&gt;
+&lt;/svg&gt;</pre>
+                        </div>
+                        <button class="copy-button" onclick="copyToClipboard('code-info')">Copy SVG</button>
+                    </div>
+
+                    <div class="icon-container">
+                        <h3 class="text-2xl font-semibold mb-6 text-gray-800">Alert Triangle</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24 mb-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M10.29 3.86L1.84 18a2 2 0 0 0 1.74 3h16.82a2 2 0 0 0 1.74-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+                            <line x1="12" y1="9" x2="12" y2="13"></line>
+                            <line x1="12" y1="17" x2="12" y2="17"></line>
+                        </svg>
+                        <div class="bg-gray-100 p-6 rounded-xl text-left w-full overflow-x-auto text-sm leading-relaxed">
+                            <pre id="code-alert">&lt;svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;
+    &lt;path d="M10.29 3.86L1.84 18a2 2 0 0 0 1.74 3h16.82a2 2 0 0 0 1.74-3L13.71 3.86a2 2 0 0 0-3.42 0z"&gt;&lt;/path&gt;
+    &lt;line x1="12" y1="9" x2="12" y2="13"&gt;&lt;/line&gt;
+    &lt;line x1="12" y1="17" x2="12" y2="17"&gt;&lt;/line&gt;
+&lt;/svg&gt;</pre>
+                        </div>
+                        <button class="copy-button" onclick="copyToClipboard('code-alert')">Copy SVG</button>
+                    </div>
+
+                    <div class="icon-container">
+                        <h3 class="text-2xl font-semibold mb-6 text-gray-800">Check Circle</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24 mb-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-8.6"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                        <div class="bg-gray-100 p-6 rounded-xl text-left w-full overflow-x-auto text-sm leading-relaxed">
+                            <pre id="code-check-circle">&lt;svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;
+    &lt;path d="M22 11.08V12a10 10 0 1 1-5.93-8.6"&gt;&lt;/path&gt;
+    &lt;polyline points="22 4 12 14.01 9 11.01"&gt;&lt;/polyline&gt;
+&lt;/svg&gt;</pre>
+                        </div>
+                        <button class="copy-button" onclick="copyToClipboard('code-check-circle')">Copy SVG</button>
+                    </div>
+
+                    <div class="icon-container">
+                        <h3 class="text-2xl font-semibold mb-6 text-gray-800">Lock</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24 mb-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                        </svg>
+                        <div class="bg-gray-100 p-6 rounded-xl text-left w-full overflow-x-auto text-sm leading-relaxed">
+                            <pre id="code-lock">&lt;svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;
+    &lt;rect x="3" y="11" width="18" height="11" rx="2" ry="2"&gt;&lt;/rect&gt;
+    &lt;path d="M7 11V7a5 5 0 0 1 10 0v4"&gt;&lt;/path&gt;
+&lt;/svg&gt;</pre>
+                        </div>
+                        <button class="copy-button" onclick="copyToClipboard('code-lock')">Copy SVG</button>
+                    </div>
+
+                    <div class="icon-container">
+                        <h3 class="text-2xl font-semibold mb-6 text-gray-800">Unlock</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24 mb-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                            <path d="M7 11V7a5 5 0 0 1 9.9-1"></path>
+                        </svg>
+                        <div class="bg-gray-100 p-6 rounded-xl text-left w-full overflow-x-auto text-sm leading-relaxed">
+                            <pre id="code-unlock">&lt;svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;
+    &lt;rect x="3" y="11" width="18" height="11" rx="2" ry="2"&gt;&lt;/rect&gt;
+    &lt;path d="M7 11V7a5 5 0 0 1 9.9-1"&gt;&lt;/path&gt;
+&lt;/svg&gt;</pre>
+                        </div>
+                        <button class="copy-button" onclick="copyToClipboard('code-unlock')">Copy SVG</button>
+                    </div>
+
+                    <!-- New Icons -->
+                    <div class="icon-container">
+                        <h3 class="text-2xl font-semibold mb-6 text-gray-800">Download</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24 mb-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        <div class="bg-gray-100 p-6 rounded-xl text-left w-full overflow-x-auto text-sm leading-relaxed">
+                            <pre id="code-download">&lt;svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;
+    &lt;path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"&gt;&lt;/path&gt;
+    &lt;polyline points="7 10 12 15 17 10"&gt;&lt;/polyline&gt;
+    &lt;line x1="12" y1="15" x2="12" y2="3"&gt;&lt;/line&gt;
+&lt;/svg&gt;</pre>
+                        </div>
+                        <button class="copy-button" onclick="copyToClipboard('code-download')">Copy SVG</button>
+                    </div>
+
+                    <div class="icon-container">
+                        <h3 class="text-2xl font-semibold mb-6 text-gray-800">Upload</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24 mb-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="17 8 12 3 7 8"></polyline>
+                            <line x1="12" y1="3" x2="12" y2="15"></line>
+                        </svg>
+                        <div class="bg-gray-100 p-6 rounded-xl text-left w-full overflow-x-auto text-sm leading-relaxed">
+                            <pre id="code-upload">&lt;svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;
+    &lt;path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"&gt;&lt;/path&gt;
+    &lt;polyline points="17 8 12 3 7 8"&gt;&lt;/polyline&gt;
+    &lt;line x1="12" y1="3" x2="12" y2="15"&gt;&lt;/line&gt;
+&lt;/svg&gt;</pre>
+                        </div>
+                        <button class="copy-button" onclick="copyToClipboard('code-upload')">Copy SVG</button>
+                    </div>
+
+                    <div class="icon-container">
+                        <h3 class="text-2xl font-semibold mb-6 text-gray-800">Globe</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24 mb-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                        </svg>
+                        <div class="bg-gray-100 p-6 rounded-xl text-left w-full overflow-x-auto text-sm leading-relaxed">
+                            <pre id="code-globe">&lt;svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;
+    &lt;circle cx="12" cy="12" r="10"&gt;&lt;/circle&gt;
+    &lt;line x1="2" y1="12" x2="22" y2="12"&gt;&lt;/line&gt;
+    &lt;path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"&gt;&lt;/path&gt;
+&lt;/svg&gt;</pre>
+                        </div>
+                        <button class="copy-button" onclick="copyToClipboard('code-globe')">Copy SVG</button>
+                    </div>
+
+                    <div class="icon-container">
+                        <h3 class="text-2xl font-semibold mb-6 text-gray-800">Calendar</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24 mb-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg>
+                        <div class="bg-gray-100 p-6 rounded-xl text-left w-full overflow-x-auto text-sm leading-relaxed">
+                            <pre id="code-calendar">&lt;svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;
+    &lt;rect x="3" y="4" width="18" height="18" rx="2" ry="2"&gt;&lt;/rect&gt;
+    &lt;line x1="16" y1="2" x2="16" y2="6"&gt;&lt;/line&gt;
+    &lt;line x1="8" y1="2" x2="8" y2="6"&gt;&lt;/line&gt;
+    &lt;line x1="3" y1="10" x2="21" y2="10"&gt;&lt;/line&gt;
+&lt;/svg&gt;</pre>
+                        </div>
+                        <button class="copy-button" onclick="copyToClipboard('code-calendar')">Copy SVG</button>
+                    </div>
+
+                    <div class="icon-container">
+                        <h3 class="text-2xl font-semibold mb-6 text-gray-800">Clock</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24 mb-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                        <div class="bg-gray-100 p-6 rounded-xl text-left w-full overflow-x-auto text-sm leading-relaxed">
+                            <pre id="code-clock">&lt;svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;
+    &lt;circle cx="12" cy="12" r="10"&gt;&lt;/circle&gt;
+    &lt;polyline points="12 6 12 12 16 14"&gt;&lt;/polyline&gt;
+&lt;/svg&gt;</pre>
+                        </div>
+                        <button class="copy-button" onclick="copyToClipboard('code-clock')">Copy SVG</button>
+                    </div>
+
+                    <div class="icon-container">
+                        <h3 class="text-2xl font-semibold mb-6 text-gray-800">Camera</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24 mb-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+                            <circle cx="12" cy="13" r="4"></circle>
+                        </svg>
+                        <div class="bg-gray-100 p-6 rounded-xl text-left w-full overflow-x-auto text-sm leading-relaxed">
+                            <pre id="code-camera">&lt;svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;
+    &lt;path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"&gt;&lt;/path&gt;
+    &lt;circle cx="12" cy="13" r="4"&gt;&lt;/circle&gt;
+&lt;/svg&gt;</pre>
+                        </div>
+                        <button class="copy-button" onclick="copyToClipboard('code-camera')">Copy SVG</button>
+                    </div>
+
+                    <div class="icon-container">
+                        <h3 class="text-2xl font-semibold mb-6 text-gray-800">Microphone</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24 mb-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
+                            <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                            <line x1="12" y1="19" x2="12" y2="23"></line>
+                            <line x1="8" y1="23" x2="16" y2="23"></line>
+                        </svg>
+                        <div class="bg-gray-100 p-6 rounded-xl text-left w-full overflow-x-auto text-sm leading-relaxed">
+                            <pre id="code-mic">&lt;svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;
+    &lt;path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"&gt;&lt;/path&gt;
+    &lt;path d="M19 10v2a7 7 0 0 1-14 0v-2"&gt;&lt;/path&gt;
+    &lt;line x1="12" y1="19" x2="12" y2="23"&gt;&lt;/line&gt;
+    &lt;line x1="8" y1="23" x2="16" y2="23"&gt;&lt;/line&gt;
+&lt;/svg&gt;</pre>
+                        </div>
+                        <button class="copy-button" onclick="copyToClipboard('code-mic')">Copy SVG</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script>
+        function copyToClipboard(elementId) {
+            const preElement = document.getElementById(elementId);
+            const textToCopy = preElement.textContent.trim();
+
+            const tempInput = document.createElement('textarea');
+            tempInput.value = textToCopy;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+
+            try {
+                document.execCommand('copy');
+                const copyButton = preElement.nextElementSibling;
+                copyButton.textContent = 'Copied!';
+                copyButton.style.backgroundColor = '#10B981'; // Tailwind green-500
+                setTimeout(() => {
+                    copyButton.textContent = 'Copy SVG';
+                    copyButton.style.backgroundColor = '#4b5563'; // Tailwind gray-600
+                }, 2000);
+            } catch (err) {
+                console.error('Failed to copy text:', err);
+            } finally {
+                document.body.removeChild(tempInput);
+            }
+        }
+    </script>
+</body>
+</html>
